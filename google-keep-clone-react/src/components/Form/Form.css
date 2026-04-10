@@ -1,0 +1,145 @@
+/* FORM CONTAINER */
+.form-container {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+}
+
+/* Take a note input */
+#note-input {
+    width: 600px;
+    margin: 32px 424px 16px 424px;
+    border: 1px solid #e0e1e0;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #5f6368;
+}
+
+/* Take a note input - inactive form */
+.inactive-form {
+    height: 46px;
+    padding: 12px 16px;
+}
+
+.note-text {
+    border: none;
+    font-size: 1rem;
+}
+
+/* Note action icons */
+.note-input-actions {
+    display: flex;
+    gap: 6px;
+    align-items: center; 
+}
+
+/* Take a note input - active form */
+.active-form {
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.active-form .push-pin {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    padding: 6px;
+}
+
+.active-form .note-title {
+    border: none;
+    font-size: 1.3rem;
+    width: 100%;
+    height: 41px;
+    padding: 16px 16px 0;   
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.active-form .active-text {
+    width: 100%;
+    height: 50px;
+    padding: 12px 16px;
+}
+
+.note-input-actions-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 36px;
+    margin: 4px 0;
+}
+
+.action-icons {
+    display: flex;
+    width: 497px;
+    height: 100%;
+}
+
+.action-icons .small-icon {
+    font-size: 18px;
+    padding: 8px;
+    margin: 0 8px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 86px;
+    height: 100%;
+    padding: 8px 24px;
+    margin-right: 15px;
+}
+
+.close-btn:hover {
+    background-color: #f1f3f4;
+}
+
+/* AI ASSISTED FEATURE 2 - REMINDER FEATURE STYLING */
+.reminder-picker-row {
+    width: 100%;
+    padding: 8px 16px 12px;
+}
+
+.reminder-input {
+    width: 100%;
+    height: 36px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    padding: 0 10px;
+    background-color: white;
+    color: #202124;
+}
+
+.form-reminder-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-reminder-controls .reminder-input {
+    flex: 1;
+}
+
+.form-clear-reminder-btn {
+    border: 1px solid #dadce0;
+    background: white;
+    color: #5f6368;
+    border-radius: 6px;
+    height: 36px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.form-clear-reminder-btn:hover {
+    background-color: #f1f3f4;
+}

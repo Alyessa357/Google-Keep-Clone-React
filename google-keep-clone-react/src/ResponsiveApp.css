@@ -1,0 +1,462 @@
+/* 1440px and down: Large laptops / desktop */
+@media (max-width: 1440px) {
+    .search {
+        width: min(70vw, 722px);
+        padding-right: 16px;
+        margin-right: 150px;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 46px;
+    }
+
+    .search-bar input {
+        width: calc(100% - 56px);
+        font-size: 0.97rem;
+    }
+
+    #note-input {
+        width: min(640px, 70vw);
+        margin: 28px auto 16px;
+    }
+
+    .modal-content {
+        width: min(680px, 88vw);
+    }
+
+    .modal-content .form-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+        justify-content: center;
+    }
+
+    #note-input {
+        width: min(620px, calc(100% - 36px));
+    }
+
+    .notes {
+        padding: 0 16px;
+    }
+
+    .note {
+        min-width: 240px;
+        max-width: 300px;
+    }
+}
+
+/* 1366 and down: common laptop */
+@media (max-width: 1366px) {
+    .search {
+        width: min(64vw, 860px);
+        padding-right: 14px;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 46px;
+    }
+
+    .search-bar input {
+        width: calc(100% - 56px);
+        font-size: 0.97rem;
+    }
+
+    #note-input {
+        width: min(640px, 68vw);
+        margin: 26px auto 14px;
+    }
+
+    .modal-content {
+        width: min(680px, 86vw);
+    }
+
+    .modal-content .form-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+        justify-content: center;
+    }
+
+    #note-input {
+        width: min(620px, calc(100% - 36px));
+    }
+
+    .notes {
+        padding: 0 16px;
+    }
+
+    .note {
+        width: calc(33.333% - 16px);
+        min-width: 240px;
+        max-width: 300px;
+    }
+}
+
+/* 1024px and down: small laptops and large tablets */
+@media (max-width: 1024px) {
+    nav {
+        width: 100%;
+        padding: 8px 6px;
+    }
+
+    .logo-area {
+        width: auto;
+        padding-right: 8px;
+    }
+
+    .search {
+        width: min(58vw, 533px);
+        padding: 0 8px 0 30px;
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+        justify-content: center;
+    }
+
+    #note-input {
+        width: min(600px, calc(100% - 28px));
+    }
+
+    .note {
+        min-width: 230px;
+        max-width: 320px;
+    }
+
+    .modal-content {
+        top: 24%;
+        width: min(620px, 92vw);
+    }
+
+    .modal-content .form-container #note-input {
+        margin: 0 auto;
+    }
+
+}
+
+/* 960px and down: medium Tablets  */
+@media (max-width: 960px) {
+    nav {
+        padding: 8px 6px;
+    }
+
+    .search {
+        width: min(56vw, 474px);
+        padding: 0 10px;
+    }
+
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+
+    #note-input {
+        width: min(560px, calc(100% - 24px));
+    }
+
+    .note {
+        min-width: 220px;
+        width: 240px;
+    }
+
+    .modal-content {
+        top: 22%;
+        width: min(620px, 92vw);
+    }
+
+    .modal-content .form-container #note-input {
+        margin: 0 auto;
+    }
+}
+
+/* 768 and down: Tablets and large phones */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .nav-center {
+        width: 426px;
+        justify-content: flex-end;
+        margin-left: 220px;
+    }
+
+    .search {
+        width: 56px;
+    }
+
+    .search-bar {
+        height: 44px;
+        width: 56px;
+        background: none;
+    }
+
+    .search-bar button {
+        background: none;
+    }
+
+    .search-bar input {
+        display: none;
+    }
+
+    body.dark-mode .search-bar {
+        background: none;
+    }
+
+    body.dark-mode .search-bar button {
+        background: none;
+    }
+
+    .sidebar-items img {
+        margin-left: 8px;
+    }
+
+    .form-container {
+        margin-top: 40px;
+    }
+
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 100px;
+    }
+
+    #note-input {
+        width: calc(100% - 18px);
+        margin: 18px auto 10px;
+    }
+
+    .note-input-actions-footer {
+        height: auto;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 4px 8px 8px;
+    }
+
+    .action-icons {
+        width: auto;
+        flex-wrap: wrap;
+        row-gap: 4px;
+    }
+
+    .close-btn {
+        margin-right: 0;
+        width: auto;
+        padding: 8px 14px;
+    }
+
+    .notes {
+        margin-top: 18px;
+        padding: 0 8px;
+        justify-content: center;
+    }
+
+    .note {
+        max-width: 360px;
+    }
+
+    .empty-notes-area {
+        margin-top: 70px;
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .empty-notes-area .material-icons-outlined {
+        width: 90px;
+        height: 90px;
+        font-size: 90px;
+    }
+
+    .empty-notes-area p {
+        font-size: 1.1rem;
+    }
+}
+
+/* 600px and down: common phones */
+@media (max-width: 600px) {
+    nav {
+        width: 100%;
+        height: 64px;
+        padding: 8px;
+    }
+
+    .nav-center {
+        margin-left: 0;
+    }
+
+    .main-menu {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .logo-area img {
+        width: 34px;
+        height: 34px;
+        margin: 0;
+    }
+
+    .search {
+        padding: 0 4px;
+    }
+
+    .profile-area a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-area img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+
+    #note-input {
+        border-radius: 12px;
+        width: calc(100% - 12px);
+        margin: 12px auto 8px;
+    }
+
+    .active-form .note-title {
+        font-size: 1.05rem;
+    }
+
+    .note {
+        width: 100%;
+        margin: 7px 4px;
+    }
+
+    .note-reminder-picker {
+        left: 8px;
+        right: 8px;
+        bottom: -52px;
+    }
+
+    .note-reminder-controls,
+    .form-reminder-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .clear-reminder-btn,
+    .form-clear-reminder-btn {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 94vw;
+        top: 16%;
+    }
+}
+
+/* 420px and down: Very small phones */
+@media (max-width: 420px) {
+    .nav {
+        width: 100%;
+    }
+
+    .search {
+        margin-left: 0;
+    }
+
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 100px;
+    }
+
+    .sidebar-items img {
+        width: 44px;
+        height: 44px;
+        margin-left: 6px;
+    }
+
+    #note-input {
+        width: 342px;
+    }
+
+    #note-input .note-text {
+        width: 92px;
+    }
+
+    #note-input.inactive-form {
+        width: 100%;
+    }
+
+    .note {
+        width: 344px;
+    }
+
+    .note .title,
+    .note .text {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+/* 390 and down: compact phones */
+@media (max-width: 390px) {
+    .main-menu {
+        width: 36px;
+        height: 36px;
+        padding: 6px;
+    }
+
+    .logo-area img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-area a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .profile-area img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #note-input {
+        width: calc(100% - 10px);
+    }
+
+    .active-form .note-title,
+    .note .title {
+        font-size: 0.96rem;
+    }
+
+    .note .text {
+        font-size: 0.9rem;
+    }
+
+    .note .title,
+    .note .text {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

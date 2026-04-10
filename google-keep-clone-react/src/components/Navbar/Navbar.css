@@ -1,0 +1,138 @@
+nav {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 8px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    width: 232px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.logo-area img {
+    width: 44px;
+    height: 40px;
+    padding-right: 4px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.logo-text {
+    font-size: 22px;
+    color: black;
+    padding-left: 4px;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+}
+
+/* Center nav section */
+.nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    width: 1037px;
+    padding: 0 30px 0 10px;
+}
+
+.search-bar {
+    background-color: #F0F4F9;
+    display: flex;
+    height: 48px;
+    width: 722px;
+    border-radius: 8px;
+}
+
+.search-bar button {
+    height: 100%;
+    width: 56px;
+    padding: 0 5px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #F0F4F9;
+}
+
+.search-bar button:focus {
+    outline: none;
+}
+
+.search-bar button img {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.search-bar input {
+    background-color: #F0F4F9;
+    border: none;
+    height: 100%;
+    width: 615px;
+    padding: 11px 0;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Action icon area */
+.actions-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #888888;
+}
+
+/* Google apps and Profile area */
+.profile-area {
+    display: flex;
+    align-items: center;
+    width: 99px;
+    padding-left: 5px;
+    padding-right: 4;
+}
+
+.profile-area a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-area img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;  
+}
+
+/* AI ASSISTED FEATURE 1 - DARK MODE - TOGGLE BUTTON */
+.theme-toggle-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}

@@ -1,0 +1,32 @@
+/* Modal pop up */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+/* Modal content */
+.modal-content {
+    position: relative;
+    top: 28%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content .form-container #note-input {
+    margin-left: 0;
+}
+
+.modal-content .form-container {
+    margin-left: 41px;
+    width: 600px;
+}
+
+.open-modal {
+    visibility: visible;
+}
