@@ -1,1 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.material-icons {
+    padding: 12px;
+    color: #444746;
+}
+
+.material-icons-outlined {
+    padding: 12px;
+    color: #888888;
+    color: #5f6368; 
+}
+
+/* Tooltip hover effect */
+.tooltip {
+    position: relative;
+}
+
+.tooltip-text {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 0.78rem;
+    background-color: #323232;
+    color: white;
+    padding: 5px;
+    margin-top: 3px;
+    opacity: 0.8;
+    white-space: nowrap;
+    border-radius: 5px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+/* Icon hover effect */
+.hover:hover {
+    background-color: #f1f3f4;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* MANUAL FEATURE - COLOR CODING / CHANGE BACKGROUND COLOR OF NOTES */
+.color-palette {
+    position: absolute;
+    bottom: -40px;
+    left: -55px;
+    display: flex;
+    gap: 6px;
+    background: white;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.color-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.color-circle:hover {
+    transform: scale(1.1);
+}
+
+
+/* AI ASSISTED FEATURE 1 - DARK MODE */
+body {
+    background-color: #ffffff;
+    color: #202124;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.dark-mode {
+    background-color: #202124;
+    color: #e8eaed;
+}
+
+body.dark-mode .hover:hover {
+    background-color: #3c4043;
+    color: #e8eaed;
+}
+
+/* Dark mode styles */
+body.dark-mode nav {
+    border-bottom: 1px solid #5f6368;
+    background-color: #202124;
+}
+
+body.dark-mode .logo-text,
+body.dark-mode .sidebar-items span,
+body.dark-mode .note .title,
+body.dark-mode .note .text,
+body.dark-mode .close-btn,
+body.dark-mode .active-form .note-title,
+body.dark-mode .active-form .active-text {
+    color: #e8eaed;
+}
+
+body.dark-mode .sidebar-active-item span {
+    color: black;
+}
+
+body.dark-mode .material-icons,
+body.dark-mode .material-icons-outlined,
+body.dark-mode .actions-area {
+    color: #e8eaed;
+}
+
+body.dark-mode .search-bar,
+body.dark-mode .search-bar input,
+body.dark-mode .search-bar button {
+    background-color: #303134;
+    color: #e8eaed;
+}
+
+body.dark-mode .search-bar button img {
+    filter: invert(1);
+}
+
+body.dark-mode #note-input,
+body.dark-mode .note {
+    background-color: #303134;
+    border-color: #5f6368;
+}
+
+body.dark-mode .inactive-form,
+body.dark-mode .active-form,
+body.dark-mode .active-form .note-title,
+body.dark-mode .active-form .active-text,
+body.dark-mode .note-text {
+    background-color: #303134;
+    color: #e8eaed;
+}
+
+body.dark-mode .close-btn:hover {
+    background-color: #3c4043;
+}
+
+body.dark-mode #sidebar.expanded {
+    background-color: #202124;
+}
+
+body.dark-mode #sidebar.expanded:hover,
+body.dark-mode .note:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.35), 0 2px 8px 2px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .sidebar-items:hover {
+    background-color: #3c4043;
+}
+
+body.dark-mode .active {
+    background-color: #41331c;
+}
+
+body.dark-mode #sidebar.expanded .sidebar-active-item {
+    background-color: #41331c;
+}
+
+body.dark-mode .empty-notes-area p {
+    color: #bdc1c6;
+}
+
+/* AI ASSISTED FEATURE 2 - REMINDER FEATURE - Dark mode adjustments */
+body.dark-mode .reminder-input {
+    background-color: #303134;
+    border-color: #5f6368;
+    color: #e8eaed;
+}
+
+body.dark-mode .reminder-chip {
+    border-color: #5f6368;
+    color: #bdc1c6;
+}
+
+body.dark-mode .reminder-chip.reminder-due {
+    border-color: #fbbc04;
+    color: #fdd663;
+    background-color: rgba(251, 188, 4, 0.15);
+}
+
+body.dark-mode .note-reminder-picker {
+    background-color: #303134;
+    border-color: #5f6368;
+}
+
+body.dark-mode .clear-reminder-btn {
+    background-color: #303134;
+    border-color: #5f6368;
+    color: #e8eaed;
+}
+
+body.dark-mode .clear-reminder-btn:hover {
+    background-color: #3c4043;
+}
+
+body.dark-mode .form-clear-reminder-btn {
+    background-color: #303134;
+    border-color: #5f6368;
+    color: #e8eaed;
+}
+
+body.dark-mode .form-clear-reminder-btn:hover {
+    background-color: #3c4043;
+}
 
