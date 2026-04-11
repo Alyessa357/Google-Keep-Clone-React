@@ -60,7 +60,6 @@ const Form = (props) => {
         setColor(null);
         setReminder("");
         setShowReminderPicker(false);
-
     };
 
     // Toggle between inactive and active form
@@ -93,10 +92,10 @@ const Form = (props) => {
                     <i className="material-icons-outlined hover push-pin">push_pin</i>
                 )}
                 {isActiveForm && (
-                    <input onChange={titleChangeHandler} value={title} className="note-title" type="text" placeholder="Title" />
+                    <input onChange={titleChangeHandler} value={title} className="note-title" type="text" placeholder="Title" style={{ backgroundColor: color ? color : (darkMode ? "#303134" : "#ffffff") }} />
                 )}
 
-                <input onChange={textChangeHandler} value={text} className="note-text active-text" type="text" placeholder="Take a note..." />
+                <input onChange={textChangeHandler} value={text} className="note-text active-text" type="text" placeholder="Take a note..." style={{ backgroundColor: color ? color : (darkMode ? "#303134" : "#ffffff") }} />
 
                 {isActiveForm ? (
                     <div className="note-input-actions-footer">

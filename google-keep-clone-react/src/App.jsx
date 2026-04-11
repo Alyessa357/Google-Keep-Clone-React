@@ -69,8 +69,7 @@ const App = () => {
                   title: editedNote.title,
                   text: editedNote.text,
                   reminder: editedNote.reminder ?? "",
-
-                  color: note.color ?? null
+                  color: editedNote.color ?? null 
                 };
             }
             return note;
