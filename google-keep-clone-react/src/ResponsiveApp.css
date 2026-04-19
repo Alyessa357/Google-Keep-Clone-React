@@ -1,3 +1,65 @@
+/* 1570px and up - Large desktops */
+@media (min-width: 1570px) {
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-center {
+        flex: 1;
+    }
+
+    .search {
+        padding-right: 16px;
+        margin-right: 150px;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 46px;
+    }
+
+    .search-bar input {
+        width: calc(100% - 56px);
+        font-size: 0.97rem;
+    }
+
+    #note-input {
+        width: min(640px, 70vw);
+        margin: 28px auto 16px;
+    }
+
+    .modal-content {
+        width: min(680px, 88vw);
+    }
+
+    .modal-content .form-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+        justify-content: center;
+    }
+
+    #note-input {
+        width: min(620px, calc(100% - 36px));
+    }
+
+    .notes {
+        padding: 0 16px;
+    }
+
+    .note {
+        min-width: 240px;
+        max-width: 300px;
+    }
+
+}
+
 /* 1440px and down: Large laptops / desktop */
 @media (max-width: 1440px) {
     .search {
@@ -53,6 +115,7 @@
 
 /* 1366 and down: common laptop */
 @media (max-width: 1366px) {
+
     .search {
         width: min(64vw, 860px);
         padding-right: 14px;
@@ -387,6 +450,7 @@
     .notes {
         width: calc(100% - 80px);
         margin-left: 100px;
+        justify-content: center;
     }
 
     .sidebar-items img {
@@ -396,7 +460,7 @@
     }
 
     #note-input {
-        width: 342px;
+        min-width: 342px;
     }
 
     #note-input .note-text {
@@ -408,7 +472,8 @@
     }
 
     .note {
-        width: 344px;
+        width: 100%;
+        margin: 7px 4px;
     }
 
     .note .title,
@@ -441,21 +506,32 @@
         height: 24px;
     }
 
+    .form-container,
+    .notes {
+        width: calc(100% - 80px);
+        margin-left: 100px;
+        justify-content: center;
+    }
+
     #note-input {
         width: calc(100% - 10px);
     }
 
-    .active-form .note-title,
-    .note .title {
+    .active-form .note-title, .note .title {
         font-size: 0.96rem;
+    }
+
+    .note {
+        width: auto;
+        margin: 7px 4px;
+        margin-left: 40px;
     }
 
     .note .text {
         font-size: 0.9rem;
     }
 
-    .note .title,
-    .note .text {
+    .note .title, .note .text {
         padding-left: 12px;
         padding-right: 12px;
     }
